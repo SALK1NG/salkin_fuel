@@ -20,3 +20,5 @@ Ein modernes Tankstellen-System für FiveM (ESX) mit einem einzigartigen NUI-Int
 1. Kopiere den Ordner `salkin_fuel` in dein `resources` Verzeichnis.
 2. Füge `ensure salkin_fuel` in deine `server.cfg` ein.
 3. Stelle sicher, dass das Item `WEAPON_PETROLCAN` in deinem Inventar existiert.
+
+<img width="476" height="496" alt="Screenshot 2026-02-18 104430" src="https://github.com/user-attachments/assets/29ae9012-760c-4fd9-a5ba-a151c64c1e0e" />
