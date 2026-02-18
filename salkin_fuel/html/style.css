@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background: transparent; 
+    overflow: hidden; 
+    display: none; 
+}
+
+#main-container { 
+    position: absolute; 
+    right: 50px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 420px; 
+}
+
+.gas-card { 
+    background: #000000; 
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Header Bereich */
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.badge { 
+    background: white; 
+    color: black; 
+    font-size: 13px; 
+    font-weight: 900; 
+    padding: 3px 8px; 
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+.title { 
+    color: white; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.price-tag { 
+    color: rgba(255, 255, 255, 0.42); 
+    font-weight: 900; 
+    font-size: 16px; 
+}
+
+.divider { 
+    height: 2px; 
+    background: white; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+/* Tankanzeige Bereich */
+.fuel-box { 
+    position: relative; 
+    width: 100%; 
+    height: 160px; 
+    background: #444444; /* Dunkelgrau aus dem Bild */
+    border-radius: 5px; 
+    overflow: hidden; 
+    margin-bottom: 25px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.fuel-bar { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+    background: #28ff95; /* Dein grüner Balken */
+    transition: width 0.2s linear; 
+}
+
+.fuel-percent { 
+    position: relative; 
+    z-index: 10; 
+    color: transparent; 
+    font-size: 4rem; 
+    font-weight: 900; 
+    /* Outline Effekt wie im Bild */
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.658); 
+}
+
+/* Info Zeilen */
+.info-row { 
+    display: flex; 
+    justify-content: space-between; 
+    color: white; 
+    font-weight: 900; 
+    margin-bottom: 12px; 
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Button Gruppe */
+.button-group { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 12px; 
+    margin-top: 15px; 
+}
+
+button { 
+    border: none; 
+    font-family: 'Inter'; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    padding: 14px; 
+    font-size: 16px;
+    color: white;
+}
+
+.btn-cash { background: #28ff95; }
+.btn-bank { background: #2dc6ff; }
+.btn-close { 
+    width: 100%; 
+    background: #ff4832; 
+    margin-top: 12px; 
+}
+
+button:hover { filter: brightness(1.1); }

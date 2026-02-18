@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div class="gas-card">
+            
+            <div class="header">
+                <span class="badge">MENÜ</span>
+                <span class="title">Tankstelle</span>
+                <span id="price-display" class="price-tag">4,99$ = 1L</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="fuel-box">
+                <div id="fuel-progress" class="fuel-bar" style="width: 0%;"></div>
+                <span id="fuel-text" class="fuel-percent">0%</span>
+            </div>
+
+            <div class="info-row">
+                <span>Liter:</span>
+                <span id="liters-val">0L</span>
+            </div>
+            
+            <div class="info-row">
+                <span>Preis:</span>
+                <span id="total-price">0$</span>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-cash" onclick="selectMethod('cash')">Barzahlung</button>
+                <button class="btn-bank" onclick="selectMethod('bank')">Bankzahlung</button>
+            </div>
+            
+            <button class="btn-close" onclick="closeUI()">Schließen</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
